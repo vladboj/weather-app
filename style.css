@@ -8,8 +8,10 @@ body {
   background-image: linear-gradient(to bottom, #59b5f1, #e6b379);
   background-attachment: fixed;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5vh;
   width: 100vw;
   height: 100vh;
 }
@@ -17,7 +19,6 @@ body {
 input {
   width: 30vw;
   height: 5vh;
-  margin-top: -40vh;
   border-radius: 5vw;
   padding: 1vw 2vw;
   border-style: none;
@@ -36,4 +37,32 @@ input:focus {
   outline: none;
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0 0 2vw;
+}
+
+div.output {
+  width: 40vw;
+  height: 60vh;
+  background-color: rgba(102, 102, 102, 0.2);
+  box-shadow: 0 0 1vw;
+  border-radius: 2vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+}
+
+div.output > div {
+  font-family: Roboto, sans-serif;
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+div.output > div.temperature {
+  font-size: 7em;
+  font-weight: 600;
+}
+
+div.output > div.city {
+  font-size: 3em;
 }
