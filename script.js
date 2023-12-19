@@ -21,8 +21,13 @@ input.addEventListener("keydown", async (event) => {
 
     const data = await requestData(url);
 
-    const output = document.querySelector("div.output");
-    console.log(data);
-    output.innerHTML = data.location.name + " " + data.current.temp_c;
+    let temperatureDiv = document.querySelector("div.temperature");
+    temperatureDiv.innerHTML = data.current.temp_c + "&#8451;";
+
+    let cityDiv = document.querySelector("div.city");
+    cityDiv.innerHTML = data.location.name;
+
+    let outputDiv = document.querySelector("div.output");
+    outputDiv.style.display = "flex";
   }
 });
