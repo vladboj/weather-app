@@ -17,7 +17,7 @@ input.addEventListener("keydown", async (event) => {
     const city = input.value.toLowerCase();
     input.value = "";
 
-    const url = `http://api.weatherapi.com/v1/current.json?key=d3f843a6b7a4493e94c162544231812&q=${city}`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=d3f843a6b7a4493e94c162544231812&q=${city}`;
 
     const data = await requestData(url);
 
