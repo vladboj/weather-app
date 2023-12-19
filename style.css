@@ -40,7 +40,7 @@ input:focus {
 }
 
 div.output {
-  width: 25vw;
+  min-width: 25vw;
   height: 60vh;
   background-color: rgba(102, 102, 102, 0.2);
   box-shadow: 0 0 1vw;
@@ -59,7 +59,7 @@ div.output > div {
 }
 
 div.output > div.temperature {
-  font-size: 7em;
+  font-size: 6em;
   font-weight: 600;
 }
 
